@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+    min-height: 100vh;
+    background-image: url(../images/skills-bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+.nav-item{
+    color: rgb(22, 60, 44);
+    text-decoration: none;
+    padding: 15px;
+}

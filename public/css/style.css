@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh; 
+    height: 100%; 
+    background-image: url('../images/bacjground-pic.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+nav ul {
+    display: flex;
+    justify-content:flex-end ;
+    list-style-type: none;
+}
+.nav-item{
+    color: rgb(22, 60, 44);
+    text-decoration: none;
+    padding: 15px;
+}
