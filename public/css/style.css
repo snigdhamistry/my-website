@@ -1,22 +1,100 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
-    min-height: 100vh; 
-    height: 100%; 
+    min-height: 100vh;
+    height: 100%;
     background-image: url('../images/bacjground-pic.jpg');
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+nav {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+}
+.logo {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    
+}
+img {
+    width: 100%;
+    margin-top: -50px;
+    max-width: 172px;
 }
 nav ul {
-    display: flex;
-    justify-content:flex-end ;
     list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
 }
-.nav-item{
-    color: rgb(22, 60, 44);
+.nav-item {
     text-decoration: none;
-    padding: 15px;
+    padding: 0.75em 1em;
+    color: rgb(3, 4, 3);
+    font-size: 1em;
+}
+i {
+    color: rgb(91, 7, 108);
+    font-size: 1.5em;
+}
+div.home {
+    line-height: 1.6;
+    text-align: center;
+    padding: 2em;
+    background: rgba(151, 179, 164, 0.609);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.227);
+    max-width: 80vw;
+    margin: auto;
+    transition: box-shadow 0.3s ease-in-out;
+}
+div.home:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.87);
+}
+.home h1,
+.home h2,
+.home h3,
+.home h4 {
+    margin-bottom: 0.5em;
+}
+.home h1 {
+    font-size: 2em;
+}
+.home h2 {
+    font-size: 1.75em;
+}
+.home h3 {
+    font-size: 1.5em;
+}
+.home h4 {
+    font-size: 1.25em;
+}
+.home a.nav-item {
+    color: rgba(114, 40, 10, 0.866);
+    font-weight: bold;
+    display: inline-block;
+}
+nav>* {
+    flex: 1 1 0;
+}
+nav ul {
+    flex: 1 1 0;
+}
+nav ul li {
+    flex: 1 1 0;
 }
