@@ -1,22 +1,127 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    height: 100%;
+body {
     min-height: 100vh;
-    background-image: url(../images/about-bg.jpg);
+    height: 100%;
+    background-image: url('../images/about-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-}
-nav ul{
     display: flex;
-    justify-content: flex-end;
-    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.nav-item{
-    color: rgb(22, 60, 44);
+nav {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+}
+.logo {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    
+}
+img {
+    width: 100%;
+    margin-top: -50px;
+    max-width: 172px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+}
+.nav-item {
     text-decoration: none;
-    padding: 15px;
+    padding: 0.75em 1em;
+    color: rgb(3, 4, 3);
+    font-size: 1em;
+}
+.container {
+    max-width: 1200px;
+    /* margin: 40px auto; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+section {
+    margin-bottom: 29px;
+    padding: 20px;
+    background-color: #90ddc053;
+    border: 3px solid #1a1919;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(31, 29, 29, 0.467);
+}
+#about:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: box-shadow 0.3s ease-in-out;
+
+}
+h2 {
+    margin-top: 0;
+}
+
+ul {
+    list-style:square;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li:last-child {
+    margin-bottom: 0;
+}
+#projects{
+    box-shadow: 0 0 10px rgba(62, 58, 58, 0.655);
+}
+#projects:hover{
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.education {
+    padding-left: 20px;
+}
+
+.education li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.education li:last-child {
+    margin-bottom: 0;
+    border-left: none;
+}
+#educatin{
+    box-shadow: 0 0 10px rgba(62, 58, 58, 0.655);
+}
+#education:hover{
+    box-shadow: 0 0 10px rgb(10, 8, 8);
+    transition: box-shadow 0.5s ease-in-out;
 }
