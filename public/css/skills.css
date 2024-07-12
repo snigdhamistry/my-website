@@ -52,7 +52,7 @@ nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 100px auto;
+    margin: 120px auto;
     padding: 20px;
     background-color: #95cb4988;
     border: 1px solid #09b1b1;
@@ -94,7 +94,7 @@ nav ul {
 }
 
 ul {
-    list-style: none;
+    list-style:disc;
     padding: 0;
     margin: 0;
 }
