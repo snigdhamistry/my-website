@@ -1,22 +1,125 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
-    height: 100%;
+body {
     min-height: 100vh;
-    background-image: url(../images/contact-bg.webp);
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100%;
+    background-image: url('../images/contact-bg.webp');
     background-size: cover;
-}
-nav ul{
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    justify-content: flex-end;
-    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.nav-item{
-    color: rgb(22, 60, 44);
+nav {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    flex-wrap: wrap;
+}
+.logo {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+    
+}
+img {
+    width: 100%;
+    margin-top: -50px;
+    max-width: 172px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1em;
+}
+.nav-item {
     text-decoration: none;
-    padding: 15px;
+    padding: 0.75em 1em;
+    color: rgb(3, 4, 3);
+    font-size: 1em;
+}
+#contact {
+    max-width: 800px;
+    margin: 131px auto;
+    background-color: #7cff5179;
+    border: 5px solid #3581dd;
+    box-shadow: 0 0 10px rgb(4, 1, 14);
+    padding-top: 6px;
+    padding-left: 66px;
+    padding-bottom: 149px;
+    padding-right: 66px;
+}
+
+#contact h2 {
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+#contact p {
+    margin-bottom: 48px;
+    font-size: 18px;
+    color: #000000;
+}
+
+.social-handles {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.social-handles li {
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.social-handles a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.social-handles a:hover {
+    color: #2b51cd;
+}
+
+.social-handles a::before {
+    /* font-family: FontAwesome; */
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.social-handles li:nth-child(1) a::before {
+    content: "\f09b"; 
+}
+
+.social-handles li:nth-child(2) a::before {
+    content: "\f0e0"; 
+}
+
+.social-handles li:nth-child(3) a::before {
+    content: "\f08c"; 
+}
+
+.social-handles li:nth-child(4) a::before {
+    content: "\f099"; 
+}
+
+.social-handles li:nth-child(5) a::before {
+    content: "\f09a";
 }
